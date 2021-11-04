@@ -4,7 +4,8 @@ botao.addEventListener('click', verificar)
 
 function verificar(){
     var txtp = window.document.getElementById('txtp')
-    var pais = String(txtp.value)
+
+    var pais = txtp.value
 
     var res = window.document.getElementById('res')
 
