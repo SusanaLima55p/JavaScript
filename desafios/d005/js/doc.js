@@ -1,18 +1,18 @@
 var botao = window.document.getElementById('botao')
 botao.addEventListener('click', clicar)
 
-function clicar(){
-    var res = window.document.getElementById('res')
+var botao = window.document.getElementById('botao')
+botao.addEventListener('click', clicar)
+  
+function clicar ( )  {
+  var me = prompt('Digite uma distância em metros (m)')
+  var res = window.document.getElementById('res')
+  res.innerHTML  =  `<h2> A distância ${me.replace('.', ',')} metros corresponde a ... </h2>`
+  res.innerHTML  +=  `<p> ${ ( me  /  1000 ) . toLocaleString ( 'pt-br' ,  { style : 'decimal' } ) } milhas (Km). </p> `
+  res.innerHTML  +=  `<p> ${ ( me  /  100 ) . toLocaleString ( 'pt-br' ,  { style : 'decimal' } ) } hectômetros (Hm). </p> `
+  res.innerHTML  +=  `<p> ${ ( me  /  10 ) . toLocaleString ( 'pt-br' ,  { style : 'decimal' } ) } decâmetros (Dam). </p> `
+  res.innerHTML  +=  `<p> ${ ( me  *  10 ) . toLocaleString ( 'pt-br' ,  { style : 'decimal' } ) } decímetros (dm). </p> `
+  res.innerHTML  +=  `<p> ${ ( me  *  100 ) . toLocaleString ( 'pt-br' ,  { style : 'decimal' } ) } centímetro (cm). </p> `
+  res.innerHTML  +=  `<p> ${ ( me  *  1000 ) . toLocaleString ( 'pt-br' ,  { style : 'decimal' } ) } milímetros (mm). </p> `
 
-    var nu = Number.parseFloat(prompt('Digite uma distância em metros (m)'))
-    
-    var c1 = nu / 1000
-    var c2 = nu /100
-    var c3 = nu /10
-    var c4 = nu *10
-    res.innerHTML = `<p>A distância de ${nu.toFixed(2).replace('.', ',')} metros, corresponde a...</p>
-    <p>${c1.toFixed(3).replace('.', ',')} quilômetros (Km)</p> <p>${c2.toFixed(3).replace('.', ',')} hectômetros (Hm)</p> 
-    <p>${c3.toFixed(3).replace('.', ',')} decâmetros (Dam)</p>
-    <p>${c4} decímetros (dm)</p>
-   ` 
 }
