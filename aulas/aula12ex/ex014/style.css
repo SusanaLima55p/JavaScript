@@ -1,0 +1,25 @@
+body{
+    background-color: #4488bb;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 320;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px #0000005d;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
