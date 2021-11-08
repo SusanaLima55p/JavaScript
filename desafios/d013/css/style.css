@@ -1,0 +1,14 @@
+mark#apr{
+    background-color: rgba(0, 128, 0, 0.241);
+    color: green;
+}
+
+mark#rec{
+    background-color: rgba(255, 255, 0, 0.241);
+    color: rgb(226, 201, 5);
+}
+
+mark#rep{
+    background-color: rgba(255, 0, 0, 0.241);
+    color: red;
+}
