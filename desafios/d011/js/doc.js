@@ -6,9 +6,9 @@ function clicar(){
     var res = document.getElementById('res')
     if ((ano % 4) == 0){
         res.innerHTML = `<h2><strong>Analisando o ano de ${ano}...</strong></h2>`
-        res.innerHTML += `<p>O ano de ${ano} <mark id="n">É BISSEXTO</mark> ✔️.</p>`
+        res.innerHTML += `<p id="s">O ano de ${ano} <mark>É BISSEXTO</mark> ✔️.</p>`
     } else {
         res.innerHTML = `<h2><strong>Analisando o ano de ${ano}...</strong></h2>`
-        res.innerHTML += `<p>O ano de ${ano} <mark id="s">NAO É BISSEXTO</mark> ❌.</p>`
+        res.innerHTML += `<p id="n">O ano de ${ano} <mark >NAO É BISSEXTO</mark> ❌.</p>`
     }
 }
